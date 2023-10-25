@@ -1,0 +1,36 @@
+#header{
+    
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: lightpink;
+    
+}
+
+li {
+   text-decoration: none;
+}
+
+#picture1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 720px;
+    width: auto;
+}
