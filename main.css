@@ -19,7 +19,6 @@ ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: lightpink;
     
 }
 
@@ -32,5 +31,21 @@ li {
     display: flex;
     justify-content: center;
     height: 720px;
-    width: auto;
+    width: 100%;
+}
+
+#nav-background {
+    background-color: lightblue;
+}
+
+#header {
+    background-color: blueviolet;
+}
+
+#picture-holder {
+    background-color: black;
+}
+
+body {
+    
 }
