@@ -7,11 +7,16 @@ h1 {
     
 }
 
+h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
 
-ul {
+#nav-style {
     list-style-type: none;
     justify-content: space-evenly;
     display: flex;
