@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lato';
+    font-family: 'Lato', Arial;
 }
 
 h1 {
@@ -14,10 +14,10 @@ h2 {
 }
 
 h3 {
-    position: absolute;
-    right: 400px;
-    top: 120px;
     font-size: 24px;
+    position: absolute;
+    right: 300px;
+    top: 50px;
 }
 
 a {
@@ -67,16 +67,14 @@ li {
 .disc-list-style {
     list-style-type: none;
     font-size: 20px;
-    position: absolute;
-    right: 360px;
-    top: 200px;
-    font-size: 18px;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .discography-container {
-    position: absolute;
-    left: 300px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .hiddenDisc {
@@ -92,5 +90,4 @@ li {
     padding-left: 5px;
     padding-right: 5px;
     justify-content: space-evenly;
-    
 }
