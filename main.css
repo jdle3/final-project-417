@@ -4,7 +4,7 @@ body{
 
 h1 {
     text-align: center;
-    
+    font-size: 42px;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
 
 h3 {
     position: absolute;
-    right: 460px;
+    right: 400px;
     top: 120px;
     font-size: 24px;
 }
@@ -61,23 +61,36 @@ li {
 
 .discography-background {
     position: relative;
+    background-color: crimson;
 }
 
 .disc-list-style {
     list-style-type: none;
     font-size: 20px;
     position: absolute;
-    right: 425px;
+    right: 360px;
     top: 200px;
     font-size: 18px;
+    background-color: aquamarine;
 }
 
 .discography-container {
-    background-color: chartreuse;
     position: absolute;
-    left: 400px;
+    left: 300px;
 }
 
 .hiddenDisc {
     display: none;
+}
+
+#btn-style {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-evenly;
+    
 }
