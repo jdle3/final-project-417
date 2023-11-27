@@ -57,11 +57,12 @@ li {
 
 #picture-holder {
     background-color: dodgerblue;
+    margin-bottom: 75px;
 }
 
 .member-background {
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
     background-color: crimson;
 }
 
