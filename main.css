@@ -59,9 +59,78 @@ li {
     background-color: dodgerblue;
 }
 
+.member-background {
+    background-color: indianred;
+    position: relative;
+}
+
+.yeji-container {
+    background-color: aquamarine;
+    display: flex;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    font-size: 16;
+}
+
+.hiddenMember {
+   display: none;
+}
+
+#members-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-evenly;
+}
+
+#memberbtn0 {
+    background-color: white;
+    padding: 15px 32px;
+    font-family: 'Courier New', Courier, monospace;
+    border-width: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#memberbtn0:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+}
+
+#memberbtn0:active {
+    transform: translateY(-4px);
+}
+
+.hidden-member-btn{
+    background-color: white;
+    padding: 15px 32px;
+    font-family: 'Courier New', Courier, monospace;
+    border-width: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hidden-member-btn:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+}
+
+.hidden-member-btn:active {
+    transform: translateY(-4px);
+}
+
 .discography-background {
     position: relative;
-    background-color: crimson;
+    background-color: blanchedalmond;
 }
 
 .disc-list-style {
@@ -81,7 +150,7 @@ li {
     display: none;
 }
 
-#btn-style {
+#disc-btn-list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -90,4 +159,42 @@ li {
     padding-left: 5px;
     padding-right: 5px;
     justify-content: space-evenly;
+}
+
+#btn0 {
+    background-color: white;
+    padding: 15px 32px;
+    font-family: 'Courier New', Courier, monospace;
+    border-width: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn0:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+}
+
+#btn0:active {
+    transform: translateY(-4px);
+}
+
+.hidden-disc-btn{
+    background-color: white;
+    padding: 15px 32px;
+    font-family: 'Courier New', Courier, monospace;
+    border-width: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hidden-disc-btn:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+}
+
+.hidden-disc-btn:active {
+    transform: translateY(-4px);
 }
