@@ -1,25 +1,25 @@
 body{
-    font-family: 'Lato', Arial;
+    font-family: 'Oswald';
 }
 
 h1 {
     text-align: center;
-    font-size: 42px;
-    font-family: 'Oswald';
+    font-size: 60px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 h2 {
     margin-top: 40px;
     text-align: center;
-    font-size: 50px;
+    font-size: 56px;
 }
 
 h3 {
-    font-size: 24px;
-    position: absolute;
-    right: 320px;
-    top: 50px;
+    font-size: 28px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-around; 
 }
 
 a {
@@ -41,8 +41,26 @@ li {
 }
 
 li a {
-    
-}
+    font-family: 'Oswald';
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+li a:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
 
 .switch-container {
     position: relative;
@@ -78,7 +96,7 @@ input {
 
 .slider {
     position: absolute;
-    background-color: #100f12;
+    background-color: #0b0a0e;
     top: 0;
     left: 0;
     right: 0;
@@ -91,7 +109,7 @@ input {
 .slider::before {
     position: absolute;
     content: "";
-    background-color: #eeebb1;
+    background-color: #ece674;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -105,7 +123,7 @@ input {
     content: "";
     height: 30px;
     width: 30px;
-    background-color: #100f12;
+    background-color: #0b0a0e;
     border-radius: 50%;
     left: -26px;
     bottom: 4px;
@@ -139,13 +157,11 @@ input:checked + .slider::after {
 #picture-holder {
     margin-top: 75px;
     margin-bottom: 75px;
-    background-color: fuchsia;
 }
 
 .member-background {
     position: relative;
     margin-bottom: 75px;
-    background-color: aquamarine;
 }
 
 .member-container {
@@ -181,9 +197,8 @@ input:checked + .slider::after {
 #memberbtn0 {
     background-color: white;
     padding: 15px 32px;
-    font-family:'Courier New', Courier, monospace;
-    font-kerning:
-    border-width: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    border-width: 1px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -202,7 +217,7 @@ input:checked + .slider::after {
     background-color: white;
     padding: 15px 32px;
     font-family: 'Courier New', Courier, monospace;
-    border-width: 2px;
+    border-width: 1px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -219,7 +234,6 @@ input:checked + .slider::after {
 
 .discography-background {
     position: relative;
-    background-color: blanchedalmond;
 }
 
 .disc-list-style {
@@ -233,6 +247,8 @@ input:checked + .slider::after {
 .discography-container {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .hiddenDisc {
@@ -254,7 +270,7 @@ input:checked + .slider::after {
     background-color: white;
     padding: 15px 32px;
     font-family: 'Courier New', Courier, monospace;
-    border-width: 2px;
+    border-width: 1px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -273,7 +289,7 @@ input:checked + .slider::after {
     background-color: white;
     padding: 15px 32px;
     font-family: 'Courier New', Courier, monospace;
-    border-width: 2px;
+    border-width: 1px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
