@@ -96,7 +96,7 @@ input {
 
 .slider {
     position: absolute;
-    background-color: #0b0a0e;
+    background-color: black;
     top: 0;
     left: 0;
     right: 0;
@@ -109,7 +109,7 @@ input {
 .slider::before {
     position: absolute;
     content: "";
-    background-color: #ece674;
+    background-color: #dbd8a3;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -123,7 +123,7 @@ input {
     content: "";
     height: 30px;
     width: 30px;
-    background-color: #0b0a0e;
+    background-color: black;
     border-radius: 50%;
     left: -26px;
     bottom: 4px;
