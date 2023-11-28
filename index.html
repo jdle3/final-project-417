@@ -282,24 +282,58 @@
                     <button id="addLightstick">Add to Cart</button>
                 </section>
             </div>
-        </section>
-
-        <section id="cart">
-            <h3>Cart</h3>
-            <ul>
-                <li>Sub-total</li>
-                <li>Tax</li>
-                <li>Shipping</li>
-                <li>Total</li>
-            </ul>
-            <button>Checkout</button>
+            <section id="cart">
+                <h3>Cart</h3>
+                    <ul>
+                        <li>Sub-total:</li><br>
+                        <li>Tax:</li><br>
+                        <li>Shipping:</li><br>
+                        <li>Total:</li><br>
+                    </ul>
+                <button id="checkout">Checkout</button>
+            </section>
         </section>
 
         <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Connect with ITZY! Your thoughts matter to us. Whether you have fan letters, questions, or just want to share the love, we're here. Drop us a message, and let's keep the Midzy spirit alive. Your support fuels us, and we can't wait to hear from you!
+            </p>
+            <form>
+                <label for="fName">First Name<span>*</span></label>
+                <span class="errorMessage">Please enter your first name</span>
+                <input class="errorInput" type="text" id="fName" autocomplete="given-name" placeholder="First Name" name="fName" required>
 
+                <label for="lName">Last Name<span>*</span></label>
+                <span class="errorMessage">Please enter your last name</span>
+                <input class="errorInput" type="text" id="lName" autocomplete="family-name" placeholder="Last Name" name="lName" required>
+
+                <label for="email">Email Address<span>*</span></label>
+                <span class="errorMessage">Please enter your email address</span>
+                <input class="errorInput" type="email" id="email" autocomplete="email" placeholder="info@itzyofficial.com" name="email" required>
+                
+                <label for="phone">Phone Number<span>*</span></label>
+                <span class="errorMessage">Please enter your phone number</span>
+                <input class="errorInput" id="phone" placeholder="+123-456-7890" name="phone" required>
+                <fieldset>
+                    <legend>Preferred Method of Contact<span>*</span></legend>
+                    <label for="prefPhone">Phone</label>
+                    <input type="radio" id="prefPhone" value="phone" name="prefContact">
+
+                    <label for="prefEmail">Email</label>
+                    <input type="radio" id="prefEmail" value="email" name="prefContact">
+                </fieldset>
+                <label for="comments">Comments<span>*</span></label>
+                <textarea name="comments" id="comments"></textarea>
+                <input type="submit" value="submit" id="contactSubmit">
+            </form>
         </section>
         
     </main>
-
+    <footer>
+        <small>
+            &copy; Jeffrey Le - All rights reserved
+        </small>
+    </footer>
 </body>
 </html>

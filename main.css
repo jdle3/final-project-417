@@ -1,16 +1,14 @@
 :root {
-
-    /* Colors */ 
-    --white: #fff;
-
-    
     /* Light mode colors */
-    --primary-color: #dce4e6;
-    --secondary-color: #000;
+    --white: #fff;
+    --black: #000;
     --red: #f03340;
+    --offwhite: #f1f0ec;
 
     /* Dark mode colors */
-    
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #f03340;
 
     /* Font */
     --oswald: 'Oswald', sans-serif;
@@ -18,7 +16,7 @@
 
 body{
     font-family: var(--oswald);
-    background-color: var(--primary-color);
+    background-color: var(--white);
 }
 .home-logo {
     display: flex;
@@ -31,7 +29,7 @@ body{
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     font-size: 56px;
 }
@@ -66,7 +64,7 @@ li a {
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--black);
     background-color: var(--white);
     cursor: pointer;
     border: 3px solid;
@@ -200,8 +198,9 @@ input:checked + .slider::after {
     font-weight: 300;
     padding-left: 150px;
     padding-right: 150px;
-    background-color: var(--white);
-    color: var(--secondary-color);
+    margin-right: 100px;
+    background-color: var(--offwhite);
+    color: var(--black);
 }
 
 .hiddenMember {
@@ -246,7 +245,7 @@ input:checked + .slider::after {
     font-size: 32px;
     font-weight: 300;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--black);
     cursor: pointer;
     border: 3px solid;
     padding: 10px 20px;
@@ -273,6 +272,7 @@ input:checked + .slider::after {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 15px;
 }
 
 .discography-container {
@@ -302,7 +302,7 @@ input:checked + .slider::after {
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--black);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -324,7 +324,7 @@ input:checked + .slider::after {
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--black);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -344,7 +344,7 @@ input:checked + .slider::after {
 #shop {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: var(--background-color);
+    background-color: var(--white);
 }
 
 #shop-background {
@@ -382,7 +382,7 @@ input:checked + .slider::after {
     border: 1px solid var(--red);
     border-radius: 2px;
     box-sizing: border-box;
-    color: var(--primary-color);
+    color: var(--white);
     cursor: pointer;
     display: inline-block;
     font-family: var(--oswald);
@@ -407,5 +407,45 @@ input:checked + .slider::after {
 }
 
 #cart {
-    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 24px;
+    background-color: var(--offwhite);
+    height: fit-content;
+    grid-column: 2 / -1;
+    margin-top: 175px;
+}
+
+#cart h3 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: #000 2px solid;
+}
+
+#cart ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+#cart li {
+    font-size: 24px;
+    margin-left: 75px;
+}
+
+#cart button {
+    background-color: var(--red);
+    border-color: var(--red);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+footer {
+    text-align: center;
 }
