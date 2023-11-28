@@ -1,11 +1,23 @@
 :root {
-    --primary-color: #fff;
+
+    /* Colors */ 
+    --white: #fff;
+
+    
+    /* Light mode colors */
+    --primary-color: #dce4e6;
     --secondary-color: #000;
-    --font-family: 'Oswald';
+    --red: #f03340;
+
+    /* Dark mode colors */
+    
+
+    /* Font */
+    --oswald: 'Oswald', sans-serif;
 }
 
 body{
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     background-color: var(--primary-color);
 }
 .home-logo {
@@ -50,11 +62,12 @@ li {
 }
 
 li a {
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #000;
+    color: var(--secondary-color);
+    background-color: var(--white);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -183,10 +196,12 @@ input:checked + .slider::after {
     display: flex;
     align-items: center;
     font-size: 24px;
-    font-family:'Oswald';
+    font-family: var(--oswald);
     font-weight: 300;
     padding-left: 150px;
     padding-right: 150px;
+    background-color: var(--white);
+    color: var(--secondary-color);
 }
 
 .hiddenMember {
@@ -205,14 +220,14 @@ input:checked + .slider::after {
 }
 
 #memberbtn0 {
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     font-size: 32px;
     font-weight: 300;
     text-transform: uppercase;
     color: #000;
     cursor: pointer;
     border: 3px solid;
-    padding: 0.25em 0.5em;
+    padding: 10px 20px;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
     user-select: none;
@@ -227,14 +242,14 @@ input:checked + .slider::after {
 }
 
 .hidden-member-btn{
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     font-size: 32px;
     font-weight: 300;
     text-transform: uppercase;
-    color: #000;
+    color: var(--secondary-color);
     cursor: pointer;
     border: 3px solid;
-    padding: 0.25em 0.5em;
+    padding: 10px 20px;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
     user-select: none;
@@ -283,11 +298,11 @@ input:checked + .slider::after {
 }
 
 #btn0 {
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #000;
+    color: var(--secondary-color);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -305,11 +320,11 @@ input:checked + .slider::after {
 }
 
 .hidden-disc-btn{
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #000;
+    color: var(--secondary-color);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -363,15 +378,14 @@ input:checked + .slider::after {
 }
 
 #shop button {
-    background: #FF4742;
-    border: 1px solid #FF4742;
+    background: var(--red);
+    border: 1px solid var(--red);
     border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: var(--primary-color);
     cursor: pointer;
     display: inline-block;
-    font-family: 'Oswald';
+    font-family: var(--oswald);
     font-size: 18px;
     font-weight: 400;
     line-height: 16px;
@@ -390,4 +404,8 @@ input:checked + .slider::after {
 
 #shop button:active {
     opacity: .5;
+}
+
+#cart {
+    
 }
