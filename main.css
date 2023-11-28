@@ -1,5 +1,16 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+.dark-theme {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
 body{
     font-family: 'Oswald';
+    background-color: var(--primary-color);
 }
 .home-logo {
     display: flex;
@@ -64,11 +75,11 @@ li a:active {
     left: 5px;
 }
 
-.switch-container {
+#toggleContainer {
     position: relative;
 }
 
-.switch {
+#toggleNight {
     position: absolute;
     display: inline-block;
     width: 80px;
@@ -322,6 +333,7 @@ input:checked + .slider::after {
 #shop {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: var(--background-color);
 }
 
 #shop-background {
@@ -333,6 +345,10 @@ input:checked + .slider::after {
 #shop-background section {
     display: grid;
     justify-items: center;
+}
+
+#shop img {
+    margin-top: 15px;
 }
 
 #shop h3 {
