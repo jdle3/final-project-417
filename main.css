@@ -7,6 +7,7 @@ body{
     height: 150px;
     width: auto;
     margin-bottom: 50px;
+    margin-top: 50px;
     cursor: pointer;
 }
 
@@ -16,7 +17,7 @@ h2 {
     font-size: 56px;
 }
 
-h3 {
+#discography h3 {
     font-size: 28px;
     font-style: italic;
     display: flex;
@@ -55,13 +56,13 @@ li a {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    }
+}
 
 li a:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
-  }
+}
 
 .switch-container {
     position: relative;
@@ -75,7 +76,7 @@ li a:active {
     border-radius: 50px;
     overflow: hidden;
     right: 35px;
-    top: 35px;
+    top: 30px;
 }
 
 .bg {
@@ -196,41 +197,47 @@ input:checked + .slider::after {
 }
 
 #memberbtn0 {
-    background-color: white;
-    padding: 15px 32px;
-    font-family: 'Courier New', Courier, monospace;
-    border-width: 1px;
-    font-size: 16px;
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-#memberbtn0:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 #memberbtn0:active {
-    transform: translateY(-4px);
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
 }
 
 .hidden-member-btn{
-    background-color: white;
-    padding: 15px 32px;
-    font-family: 'Courier New', Courier, monospace;
-    border-width: 1px;
-    font-size: 16px;
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.hidden-member-btn:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .hidden-member-btn:active {
-    transform: translateY(-4px);
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
 }
 
 .discography-background {
@@ -268,39 +275,106 @@ input:checked + .slider::after {
 }
 
 #btn0 {
-    background-color: white;
-    padding: 15px 32px;
-    font-family: 'Courier New', Courier, monospace;
-    border-width: 1px;
-    font-size: 16px;
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-#btn0:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 #btn0:active {
-    transform: translateY(-4px);
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
 }
 
 .hidden-disc-btn{
-    background-color: white;
-    padding: 15px 32px;
-    font-family: 'Courier New', Courier, monospace;
-    border-width: 1px;
-    font-size: 16px;
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.hidden-disc-btn:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .hidden-disc-btn:active {
-    transform: translateY(-4px);
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+#shop {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#shop-background {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / 2;
+}
+
+#shop-background section {
+    display: grid;
+    justify-items: center;
+}
+
+#shop h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+#shop p {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#shop button {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Oswald,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#shop button:active {
+    opacity: .5;
 }
