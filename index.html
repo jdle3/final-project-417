@@ -10,9 +10,6 @@
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -296,36 +293,38 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>
-                Connect with ITZY! Your thoughts matter to us. Whether you have fan letters, questions, or just want to share the love, we're here. Drop us a message, and let's keep the Midzy spirit alive. Your support fuels us, and we can't wait to hear from you!
-            </p>
+            <p>Connect with ITZY! Your thoughts matter to us. Whether you have fan letters, questions, or just want to share the love, we're here. Drop us a message, and let's keep the Midzy spirit alive. Your support fuels us, and we can't wait to hear from you!</p>
             <form>
-                <label for="fName">First Name<span>*</span></label>
+                <!-- First Name -->
+                <label for="fName">First Name<span class="required">*</span></label>
                 <span class="errorMessage">Please enter your first name</span>
-                <input class="errorInput" type="text" id="fName" autocomplete="given-name" placeholder="First Name" name="fName" required>
-
-                <label for="lName">Last Name<span>*</span></label>
+                <input type="text"  name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                <!-- Last Name -->
+                <label for="lName">Last Name<span class="required">*</span></label>
                 <span class="errorMessage">Please enter your last name</span>
-                <input class="errorInput" type="text" id="lName" autocomplete="family-name" placeholder="Last Name" name="lName" required>
-
-                <label for="email">Email Address<span>*</span></label>
+                <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
+                <!-- Email -->
+                <label for="email">Email Address</label>
                 <span class="errorMessage">Please enter your email address</span>
-                <input class="errorInput" type="email" id="email" autocomplete="email" placeholder="info@itzyofficial.com" name="email" required>
-                
-                <label for="phone">Phone Number<span>*</span></label>
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="info@itzyofficial.com" required>
+                <!-- Phone Number -->
+                <label for="phone">Phone Number</label>
                 <span class="errorMessage">Please enter your phone number</span>
-                <input class="errorInput" id="phone" placeholder="+123-456-7890" name="phone" required>
+                <input type="tel" name="phone" id="phone" placeholder="+123-456-7890" required>
+                <!-- Preferred Contact -->
                 <fieldset>
-                    <legend>Preferred Method of Contact<span>*</span></legend>
+                    <legend>Preferred Method of Contact<span class="required">*</span></legend>
                     <label for="prefPhone">Phone</label>
-                    <input type="radio" id="prefPhone" value="phone" name="prefContact">
+                    <input type="radio" id="prefPhone" value="phone" name="prefContact" checked>
 
                     <label for="prefEmail">Email</label>
-                    <input type="radio" id="prefEmail" value="email" name="prefContact">
+                    <input type="radio" id="prefEmail" value="email" name="prefContact" checked>
                 </fieldset>
-                <label for="comments">Comments<span>*</span></label>
-                <textarea name="comments" id="comments"></textarea>
-                <input type="submit" value="submit" id="contactSubmit">
+                <!-- Comments -->
+                <label for="comments">Comments<span class="required">*</span></label>
+                <textarea name="comments" rows="6" cols="2" id="comments"></textarea>
+                <!-- Submit Button -->
+                <input type="submit" name="submit" id="submit" value="submit">
             </form>
         </section>
         
