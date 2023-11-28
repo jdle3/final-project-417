@@ -175,8 +175,9 @@ input:checked + .slider::after {
 .member-description {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-family:'Oswald';
+    font-weight: 300;
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -358,7 +359,7 @@ input:checked + .slider::after {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: Oswald,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Oswald';
     font-size: 18px;
     font-weight: 400;
     line-height: 16px;
