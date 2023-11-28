@@ -1,11 +1,7 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #000;
-}
-
-.dark-theme {
-    --primary-color: #000;
-    --secondary-color: #fff;
+    --font-family: 'Oswald';
 }
 
 body{
