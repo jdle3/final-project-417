@@ -1,11 +1,12 @@
 body{
     font-family: 'Oswald';
 }
-
-h1 {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 700;
+.home-logo {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 
@@ -33,7 +34,7 @@ a {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
-    margin: 0;
+    margin-bottom: 50px;
 }
 
 li {
@@ -96,7 +97,7 @@ input {
 
 .slider {
     position: absolute;
-    background-color: black;
+    background-color: #0c0c20;
     top: 0;
     left: 0;
     right: 0;
@@ -109,7 +110,7 @@ input {
 .slider::before {
     position: absolute;
     content: "";
-    background-color: #dbd8a3;
+    background-color: #e4e2d1;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -123,7 +124,7 @@ input {
     content: "";
     height: 30px;
     width: 30px;
-    background-color: black;
+    background-color: #0c0c20;
     border-radius: 50%;
     left: -26px;
     bottom: 4px;
