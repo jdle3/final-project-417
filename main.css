@@ -102,7 +102,7 @@ li a:active {
 
 .slider {
     position: absolute;
-    background-color: #0c0c20;
+    background-color: var(--black);
     top: 0;
     left: 0;
     right: 0;
@@ -115,7 +115,7 @@ li a:active {
 .slider::before {
     position: absolute;
     content: "";
-    background-color: #e4e2d1;
+    background-color: var(--offwhite);
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -129,7 +129,7 @@ li a:active {
     content: "";
     height: 30px;
     width: 30px;
-    background-color: #0c0c20;
+    background-color: var(--black);
     border-radius: 50%;
     left: -26px;
     bottom: 4px;
@@ -434,7 +434,7 @@ input:checked + .slider::after {
     display: none;
     color: red;
     font-size: 18px;
-    border-radius: 5px;
+    
 }
 
 .required {
@@ -455,6 +455,7 @@ input:checked + .slider::after {
     border: black 1px solid;
     padding: 1.2em;
     border-radius: 5px;
+    width: 100px;
 }
 
 footer {

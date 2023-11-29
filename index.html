@@ -295,24 +295,29 @@
             <form>
                 <!-- First Name -->
                 <label for="fName">First Name<span class="required">*</span></label>
-                <span class="errorMessage">Please enter your first name</span>
                 <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                <span class="errorMessage">Please enter your first name</span>
                 <!-- Last Name -->
                 <label for="lName">Last Name<span class="required">*</span></label>
-                <span class="errorMessage">Please enter your last name</span>
                 <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
+                <span class="errorMessage">Please enter your last name</span>
                 <!-- Email -->
                 <label for="email">Email Address</label>
-                <span class="errorMessage">Please enter your email address</span>
                 <input type="email" name="email" id="email" autocomplete="email" placeholder="info@itzyofficial.com" required>
+                <span class="errorMessage">Please enter your email address</span>
                 <!-- Phone Number -->
                 <label for="phone">Phone Number</label>
-                <span class="errorMessage">Please enter your phone number</span>
                 <input type="tel" name="phone" id="phone" placeholder="+123-456-7890" required>
+                <span class="errorMessage">Please enter your phone number</span>
                 <!-- Preferred Contact -->
                 <fieldset>
                     <legend>Preferred Method of Contact<span class="required">*</span></legend>
-                    <label for="prefPhone">Phone</label>
+                    <label for="prefPhone" class="radio">
+                        <span class="radio_input">
+                            <input type="radio" name="contactMethod" id="phone" value="phone" required checked>
+                        </span>
+                        <span class="radio_label">Phone</span>
+                    </label>
                     <input type="radio" id="prefPhone" value="phone" name="prefContact" checked>
 
                     <label for="prefEmail">Email</label>
