@@ -18,12 +18,10 @@
         <div id="header">
             <div id="toggleContainer">
                 <label id="toggleNight">
-                    <input type="checkbox">
-                    <div class="slider">
-                        <div class="bg"></div>
-                    </div>
+                    <input id="daynight" type="checkbox">
+                    <div class="slider"></div>
                 </label>
-                </div>
+            </div>
             <div class="home-logo">
                 <img src="pictures/ITZY_black_x300.webp" alt="itzy logo">
             </div>
@@ -285,7 +283,7 @@
                         <li>Sub-total:</li><br>
                         <li>Tax:</li><br>
                         <li>Shipping:</li><br>
-                        <li>Total:</li><br>
+                        <li>Total:</li>
                     </ul>
                 <button id="checkout">Checkout</button>
             </section>
@@ -298,7 +296,7 @@
                 <!-- First Name -->
                 <label for="fName">First Name<span class="required">*</span></label>
                 <span class="errorMessage">Please enter your first name</span>
-                <input type="text"  name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
                 <!-- Last Name -->
                 <label for="lName">Last Name<span class="required">*</span></label>
                 <span class="errorMessage">Please enter your last name</span>
@@ -322,10 +320,16 @@
                 </fieldset>
                 <!-- Comments -->
                 <label for="comments">Comments<span class="required">*</span></label>
-                <textarea name="comments" rows="6" cols="2" id="comments"></textarea>
+                <textarea name="comments" rows="6" id="comments"></textarea>
                 <!-- Submit Button -->
-                <input type="submit" name="submit" id="submit" value="submit">
+                <input type="submit" name="submit" id="submit" value="Submit">
             </form>
+        </section>
+
+        <section id="game">
+            <h2>Guess Who?</h2>
+            <p>Hey Midzy! We're excited to add a sprinkle of fun to your ITZY journey. Take a shot at guessing the right number, and you could be the lucky winner of some fantastic ITZY merchandise!</p>
+            <p>Just enter a number from 1-10 and if you guess correctly, you win!</p>
         </section>
         
     </main>

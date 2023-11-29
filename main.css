@@ -50,7 +50,7 @@ a {
     justify-content: space-evenly;
     display: flex;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--oswald);
     padding: 0;
     margin-bottom: 50px;
 }
@@ -97,18 +97,7 @@ li a:active {
     top: 30px;
 }
 
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 0.6s;
-    z-index: -1;
-}
-
-
-input {
+.daynight {
     opacity: 0;
     width: 0;
     height: 0;
@@ -446,11 +435,6 @@ input:checked + .slider::after {
     margin-right: 150px;
 }
 
-#contact {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
 #contact h2 {
     margin-bottom: 0;
 }
@@ -473,35 +457,49 @@ input:checked + .slider::after {
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 450px;
+    padding-right: 450px;
 }
 
 #contact legend {
     font-size: 24px;
 }
 
-#contact input[type="submit"]{
-    width: 125px;
-    text-transform: uppercase;
+#contact input {
+    border: black 1px solid;
+    padding: 1.2em;
+    border-radius: 5px;
+}
+
+#submit {
+    border-radius: 5px;
+    width: 40%;
+    padding: 0.5em;
+    margin: 1em auto;
+    font-family: var(--oswald);
     background-color: var(--red);
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    border: none;
-    margin-top: 15px;
-    height: 36px;
-    filter: drop-shadow(0px 4px 4px black);
+    color: var(--offwhite);
+    font-size: 1em;
 }
 
 .errorMessage {
     display: none;
     color: red;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 .required {
     color: red;
+}
+
+#game h2 {
+    margin: 0;
+}
+
+#game p {
+    text-align: center;
+    font-size: 18px;
 }
 
 footer {
