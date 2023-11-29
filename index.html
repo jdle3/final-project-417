@@ -7,7 +7,7 @@
     <link rel="icon" href="pictures/favicon.png" type="image/x-icon">
     <meta name="author" content="Jeffrey Le">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -18,12 +18,17 @@
         <div id="header">
             <div id="toggleContainer">
                 <label id="toggleNight">
-                    <input id="daynight" type="checkbox">
+                    <input id="daynight" type="checkbox" value="darkmode" onchange="darkMode()">
                     <div class="slider"></div>
                 </label>
             </div>
-            <div class="home-logo">
-                <img src="pictures/ITZY_black_x300.webp" alt="itzy logo">
+            <div>
+                <div id="lightLogo" class="home-logo-light">
+                    <img src="pictures/ITZY_black_x300.webp" alt="itzy logo">
+                </div>
+                <div id="darkLogo"class="home-logo-dark">
+                    <img src="pictures/ITZY_white_x300.webp" alt="itzy logo">
+                </div>
             </div>
             <nav>
                 <div id="nav-background">
@@ -98,27 +103,27 @@
                 </section>
                 <ul id="members-list">
                     <li>
-                        <button id="memberbtn0" class="current-member-btn">
+                        <button id="memberbtn0" class="current-member-btn" onclick="YejiActive()"> 
                             Yeji
                         </button>
                     </li>
                     <li>
-                        <button id="memberbtn1" class="hidden-member-btn">
+                        <button id="memberbtn1" class="hidden-member-btn" onclick="LiaActive()">
                             Lia
                         </button>
                     </li>
                     <li>
-                        <button id="memberbtn2" class="hidden-member-btn">
+                        <button id="memberbtn2" class="hidden-member-btn" onclick="RyujinActive()">
                             Ryujin
                         </button>
                     </li>
                     <li>
-                        <button id="memberbtn3" class="hidden-member-btn">
+                        <button id="memberbtn3" class="hidden-member-btn" onclick="ChaeryeongActive()">
                             Chaeryeong
                         </button>
                     </li>
                     <li>
-                        <button id="memberbtn4" class="hidden-member-btn">
+                        <button id="memberbtn4" class="hidden-member-btn" onclick="YunaActive()">
                             Yuna
                         </button>
                     </li>
@@ -210,27 +215,27 @@
                 </section>
                 <ul id="disc-btn-list">
                     <li>
-                        <button id="btn0" class="current-disc-btn">
+                        <button id="btn0" class="current-disc-btn" onclick="KillMyDoubtActive()">
                             Kill My Doubt
                         </button>
                     </li>
                     <li>
-                        <button id="btn1" class="hidden-disc-btn">
+                        <button id="btn1" class="hidden-disc-btn" onclick="CheshireActive()">
                             Cheshire
                         </button>
                     </li>
                     <li>
-                        <button id="btn2" class="hidden-disc-btn">
+                        <button id="btn2" class="hidden-disc-btn" onclick="CheckmateActive()">
                             Checkmate
                         </button>
                     </li>
                     <li>
-                        <button id="btn3" class="hidden-disc-btn">
+                        <button id="btn3" class="hidden-disc-btn" onclick="CrazyInLoveActive()">
                             Crazy In Love
                         </button>
                     </li>
                     <li>
-                        <button id="btn4" class="hidden-disc-btn">
+                        <button id="btn4" class="hidden-disc-btn" onclick="GuessWhoActive()">
                             Guess Who
                         </button>
                     </li>
@@ -292,43 +297,43 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>Connect with ITZY! Your thoughts matter to us. Whether you have fan letters, questions, or just want to share the love, we're here. Drop us a message, and let's keep the Midzy spirit alive. Your support fuels us, and we can't wait to hear from you!</p>
-            <form>
+            <div class="contactForm">
                 <!-- First Name -->
                 <label for="fName">First Name<span class="required">*</span></label>
-                <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
-                <span class="errorMessage">Please enter your first name</span>
+                <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" >
+                <span id="firstNameError"class="errorMessage">Please enter your first name</span>
                 <!-- Last Name -->
                 <label for="lName">Last Name<span class="required">*</span></label>
-                <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
-                <span class="errorMessage">Please enter your last name</span>
+                <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" >
+                <span id="lastNameError" class="errorMessage">Please enter your last name</span>
                 <!-- Email -->
                 <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" autocomplete="email" placeholder="info@itzyofficial.com" required>
-                <span class="errorMessage">Please enter your email address</span>
+                <input type="email" name="email" id="emailInput" autocomplete="email" placeholder="info@itzyofficial.com" >
+                <span id="emailError" class="errorMessage">Please enter your email address</span>
                 <!-- Phone Number -->
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="+123-456-7890" required>
-                <span class="errorMessage">Please enter your phone number</span>
+                <input type="tel" name="phone" id="phoneInput" placeholder="+123-456-7890" >
+                <span id="phoneError" class="errorMessage">Please enter your phone number</span>
                 <!-- Preferred Contact -->
                 <fieldset>
                     <legend>Preferred Method of Contact<span class="required">*</span></legend>
-                    <label for="prefPhone" class="radio">
-                        <span class="radio_input">
-                            <input type="radio" name="contactMethod" id="phone" value="phone" required checked>
-                        </span>
-                        <span class="radio_label">Phone</span>
-                    </label>
-                    <input type="radio" id="prefPhone" value="phone" name="prefContact" checked>
-
-                    <label for="prefEmail">Email</label>
-                    <input type="radio" id="prefEmail" value="email" name="prefContact" checked>
+                    <div>
+                        <input type="radio" id="phoneRadio" name="prefContact" value="phone" checked onclick="radioChange()" />   
+                        <label for="prefPhone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="emailRadio" name="prefContact" value="email" onclick="radioChange()"/>
+                        <label for="prefEmail">Email</label>
+                    </div>
                 </fieldset>
                 <!-- Comments -->
                 <label for="comments">Comments<span class="required">*</span></label>
                 <textarea name="comments" rows="6" id="comments"></textarea>
+                <span id="commentsError" class="errorMessage">Please add a comment</span>
                 <!-- Submit Button -->
-                <input type="submit" name="submit" id="submit" value="Submit">
-            </form>
+                <div class="successSubmit" id="successSubmit"> Thanks, Midzy! Your submission warms our hearts - stay tuned for more ITZY magic! </div>
+                <button class="submit"  id="submitForm" onclick="validateFields()"> Submit </button>
+            </div>
         </section>
 
         <section id="game">
@@ -336,10 +341,14 @@
             <p>Hey Midzy! We're excited to add a sprinkle of fun to your ITZY journey. Take a shot at guessing the right number, and you could be the lucky winner of some fantastic ITZY merchandise!</p>
             <p>Just enter a number from 1-10 and if you guess correctly, you win!</p>
                 <div id="gameContainer">
-                    <form>
-                        <input type="number" id="numGame">
-                        <input type="submit" id="submitGame" value="Guess!">
-                    </form>
+                    <div class="responseMsg" id="responseMsg" >
+                        <div class="loser" id="loser">Sorry, better luck next time!</div>
+                        <div class="winner" id="winner">Congratulations! You guessed it right!</div>
+                        <div class="guess" id="guess"></div> 
+                        <div class="rng" id="rng" ></div>
+                    </div>
+                    <input type="number" id="numGame">
+                    <input type="submit" id="submitGame" value="Guess!" onclick="playGame()">
                 </div>
         </section>
         

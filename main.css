@@ -1,14 +1,9 @@
 :root {
-    /* Light mode colors */
+    /* colors */
     --white: #fff;
     --black: #000;
     --red: #f03340;
     --offwhite: #f1f0ec;
-
-    /* Dark mode colors */
-    --primary-color: #000;
-    --secondary-color: #fff;
-    --accent-color: #f03340;
 
     /* Font */
     --oswald: 'Oswald', sans-serif;
@@ -18,8 +13,18 @@ body{
     font-family: var(--oswald);
     background-color: var(--white);
 }
-.home-logo {
+.home-logo-light{
     display: flex;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.home-logo-dark{
+    display: none;
     justify-content: center;
     height: 150px;
     width: auto;
@@ -381,7 +386,7 @@ input:checked + .slider::after {
     margin-bottom: 0;
 }
 
-#contact p {
+#contact p{
     text-align: center;
     font-size: 20px;
     padding-bottom: 20px;
@@ -395,7 +400,27 @@ input:checked + .slider::after {
     font-size: 24px;
 }
 
-#contact form {
+.successSubmit {
+    display: none;
+}
+
+.loser {
+    display: none;
+}
+.winner {
+    display: none;
+}
+.rng {
+    display: none;
+}
+.guess {
+    display: none;
+}
+
+.responseMsg {
+    text-align: center;
+}
+.contactForm {
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
@@ -419,7 +444,7 @@ input:checked + .slider::after {
     border-radius: 5px;
 }
 
-#submit {
+.submit {
     border-radius: 5px;
     width: 40%;
     padding: 0.5em;
@@ -428,6 +453,10 @@ input:checked + .slider::after {
     background-color: var(--red);
     color: var(--offwhite);
     font-size: 1em;
+}
+
+.submit:active {
+    opacity: 0.5;
 }
 
 .errorMessage {
