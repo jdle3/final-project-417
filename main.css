@@ -71,9 +71,6 @@ li a {
     padding: 0.25em 0.5em;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
 li a:active {
@@ -207,7 +204,7 @@ input:checked + .slider::after {
     justify-content: space-evenly;
 }
 
-#memberbtn0 {
+#members button {
     font-family: var(--oswald);
     font-size: 32px;
     font-weight: 300;
@@ -218,34 +215,9 @@ input:checked + .slider::after {
     padding: 10px 20px;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
-#memberbtn0:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
-}
-
-.hidden-member-btn{
-    font-family: var(--oswald);
-    font-size: 32px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: var(--black);
-    cursor: pointer;
-    border: 3px solid;
-    padding: 10px 20px;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.hidden-member-btn:active {
+#members button:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
@@ -286,7 +258,7 @@ input:checked + .slider::after {
     justify-content: space-evenly;
 }
 
-#btn0 {
+#discography button {
     font-family: var(--oswald);
     font-size: 32px;
     font-weight: 400;
@@ -297,34 +269,9 @@ input:checked + .slider::after {
     padding: 0.25em 0.5em;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
-#btn0:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
-}
-
-.hidden-disc-btn{
-    font-family: var(--oswald);
-    font-size: 32px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--black);
-    cursor: pointer;
-    border: 3px solid;
-    padding: 0.25em 0.5em;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.hidden-disc-btn:active {
+#discography button:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
@@ -383,11 +330,6 @@ input:checked + .slider::after {
     padding: 12px 14px;
     margin-bottom: 15px;
     text-align: center;
-    text-rendering: geometricprecision;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
     vertical-align: middle;
 }
 
