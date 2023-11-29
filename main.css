@@ -471,6 +471,12 @@ input:checked + .slider::after {
     border-radius: 5px;
 }
 
+#comments {
+    border: black 1px solid;
+    padding: 1.2em;
+    border-radius: 5px;
+}
+
 #submit {
     border-radius: 5px;
     width: 40%;
@@ -494,7 +500,8 @@ input:checked + .slider::after {
 }
 
 #game h2 {
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 25px;
 }
 
 #game p {
@@ -502,8 +509,20 @@ input:checked + .slider::after {
     font-size: 18px;
 }
 
+#game input {
+    border: black 1px solid;
+    padding: 1.2em;
+    border-radius: 5px;
+}
+
 footer {
     text-align: center;
     background-color: var(--offwhite);
     margin: 0;
+}
+
+#gameContainer {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 25px;
 }
